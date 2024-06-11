@@ -5,6 +5,7 @@ import Cards from "./components/Cards";
 import TripoHakkinda from "./components/TripoHakkinda";
 import Oyunlarimiz from "./components/Oyunlarimiz";
 import EkibimizeKatilin from "./components/EkibimizeKatilin";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <TripoHakkinda></TripoHakkinda>
         <Oyunlarimiz></Oyunlarimiz>
         <EkibimizeKatilin></EkibimizeKatilin>
+        <Footer></Footer>
       </div>
     </>
   );

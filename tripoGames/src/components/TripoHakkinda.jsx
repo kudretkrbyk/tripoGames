@@ -12,7 +12,7 @@ export default function TripoHakkinda() {
         kullanıcılarınıza kendinizi tanıtmak için harika bir yer.
       </div>
       <div className="w-1/2">
-        <button className="bg-[#da392b] p-5 rounded-xl hover:border border-black hover:bg-white">
+        <button className="bg-[#da392b] p-5 rounded-xl hover:border border-black hover:bg-white  duration-500">
           {" "}
           Daha Fazla Bilgi
         </button>
