@@ -1,11 +1,9 @@
 export default function EkibimizeKatilin() {
   return (
-    <div className="w-full  flex flex-col relative overflow-hidden">
-      <div className="border border-blue-500  w-full h-full relative ">
-        <img
-          className=""
-          src="https://static.wixstatic.com/media/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg/v1/fill/w_1265,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg"
-        ></img>
+    <div className="w-full  flex flex-col relative  ">
+      <div className="border border-blue-500  w-full h-[700px] relative overflow-hidden ">
+        <div className=" bg-center bg-cover w-full h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg/v1/fill/w_1265,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg)]   "></div>
+
         <div className="absolute flex flex-col items-start justify-center w-full gap-10 p-20 top-0">
           <div className="text-xl">Ekimize Katılın</div>
           <div className="text-5xl font-bold w-2/3">
@@ -18,15 +16,12 @@ export default function EkibimizeKatilin() {
         <div className="absolute right-10 bottom-0 w-[500px] h-[400px]  bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_4577a1db5cfd48e5b5b655294b288c71~mv2.png/v1/fill/w_732,h_621,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/shutterstock_1806326989.png)]   "></div>
       </div>
 
-      <div className="w-full ">
-        <img
-          className=" "
-          src="https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg"
-        ></img>
+      <div className="w-full h-[600px] ">
+        <div className="w-full h-[600px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
       </div>
-      <div className="absolute z-30 flex items-end justify-between w-full p-10 top-1/2 ">
+      <div className="absolute z-30 flex items-end justify-between w-full p-10 bottom-1/2 ">
         {" "}
-        <div className="z-30   shadow-xl bg-white  rounded-xl bottom-1/2 right-1/2  flex flex-col items-center justify-start p-5 gap-10">
+        <div className="z-30   shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-5 gap-10">
           <div className="w-full">
             <div>Bize Ulaşın</div>
             <div>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</div>
