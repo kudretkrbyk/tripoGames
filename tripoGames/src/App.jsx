@@ -6,6 +6,8 @@ import Main from "./pages/Main";
 import Kipon from "./pages/Kipon";
 import Robotrix from "./pages/Robotrix";
 import Box from "./pages/Box";
+import Kariyer from "./pages/Kariyer";
+import Hakkinda from "./pages/Hakkinda";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/kipon" element={<Kipon />} />
           <Route path="/robotrix" element={<Robotrix />} />
           <Route path="/treasure-box" element={<Box />} />
+          <Route path="/kariyer" element={<Kariyer />} />
+          <Route path="/Hakkinda" element={<Hakkinda />} />
 
           {/* Diğer sayfalar için de benzer şekilde Route ekleyebilirsiniz */}
         </Routes>
