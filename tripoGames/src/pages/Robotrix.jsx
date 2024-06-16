@@ -1,11 +1,18 @@
 import StarIcon from "../assets/star.svg";
+import useIntersectionObserver from "../customJs/useIntersectionObserver"; // Hook'u import edin
+import { useRef } from "react";
 export default function Robotrix() {
+  const divRef1 = useRef(null);
+
+  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
   return (
     <div className="flex flex-col w-full item">
       <div className="relative py-10 ">
         <div className=" bg-center bg-cover w-full h-screen bg-[url(https://static.wixstatic.com/media/c837a6_d618c25190414f7abeae106864d8a84e~mv2.jpg/v1/fill/w_1521,h_687,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_d618c25190414f7abeae106864d8a84e~mv2.jpg)]   "></div>
         <div
-          className={`absolute top-0 right-1/2
+          ref={divRef1}
+          className={`absolute top-0 right-1/2 transition-transform duration-700 ${
+            hasIntersected1 ? "translate-x-0" : "-translate-x-full"
           } w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
         >
           <div className="flex items-center justify-start gap-2">

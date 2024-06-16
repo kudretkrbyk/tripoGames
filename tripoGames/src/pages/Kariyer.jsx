@@ -1,8 +1,20 @@
+import useIntersectionObserver from "../customJs/useIntersectionObserver"; // Hook'u import edin
+import { useRef } from "react";
 export default function Kariyer() {
+  const divRef1 = useRef(null);
+  const divRef2 = useRef(null);
+
+  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
+  const hasIntersected2 = useIntersectionObserver(divRef2, { threshold: 0.9 });
   return (
-    <div className="flex flex-col w-full">
-      <div className="w-1/2 p-10 flex flex-col gap-4">
-        <div className="text-xl font-bold">
+    <div className="flex flex-col w-full p-10">
+      <div
+        ref={divRef1}
+        className={`transition-transform duration-700 ${
+          hasIntersected1 ? "translate-x-0" : "-translate-x-20"
+        } w-1/2 p-10 flex flex-col gap-4 text-black`}
+      >
+        <div className="text-xl font-bold text-black">
           Gelin, Oyun Dünyasında Devrim Yaratalım
         </div>
         <div className="text-5xl font-bold">Ekibimize Katılın</div>
@@ -95,9 +107,16 @@ export default function Kariyer() {
             </div>
           </div>
         </div>
-        <div className="w-full h-[600px] flex relative  bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   ">
+        <div
+          ref={divRef2}
+          className="w-full h-[600px] flex relative  bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "
+        >
           <div className="bg-gray-600 w-full h-[600px] absolute top-0 left-0 z-10 opacity-40"></div>
-          <div className="z-30 flex flex-col items-start justify-center p-10 gap-10 text-white">
+          <div
+            className={` transition-opacity duration-1000 ${
+              hasIntersected2 ? "opacity-100" : "opacity-0"
+            }  z-30 flex flex-col items-start justify-center p-10 gap-10 text-white`}
+          >
             <div className="text-3xl">Aradığınız Pozisyonu Bulamadınız mı?</div>
             <div className="text-5xl font-bold">CV'nizi Gönderin</div>
             <div>

@@ -1,7 +1,25 @@
+import useIntersectionObserver from "../customJs/useIntersectionObserver"; // Hook'u import edin
+import { useRef } from "react";
 export default function Hakkinda() {
+  const divRef1 = useRef(null);
+  const divRef2 = useRef(null);
+  const divRef3 = useRef(null);
+  const divRef4 = useRef(null);
+  const divRef5 = useRef(null);
+
+  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
+  const hasIntersected2 = useIntersectionObserver(divRef2, { threshold: 0.9 });
+  const hasIntersected3 = useIntersectionObserver(divRef3, { threshold: 0.9 });
+  const hasIntersected4 = useIntersectionObserver(divRef4, { threshold: 0.9 });
+  const hasIntersected5 = useIntersectionObserver(divRef5, { threshold: 0.9 });
   return (
-    <div className="flex flex-col w-full ">
-      <div className="flex flex-col gap-5 p-10 w-1/2">
+    <div className="flex flex-col w-full py-10">
+      <div
+        ref={divRef1}
+        className={`transition-transform duration-700 ${
+          hasIntersected1 ? "translate-x-0" : "-translate-x-20"
+        } flex flex-col gap-5 p-10 w-1/2`}
+      >
         <div className="text-xl font-bold">Biz Tripo'yuz</div>
         <div className="text-5xl font-bold text-wrap">
           İnteraktif eğlencenin en iyi örneklerini vererek oyun anlayışını
@@ -11,8 +29,15 @@ export default function Hakkinda() {
       <div className="flex items-center justify-center w-full p-10">
         <div className=" bg-center bg-cover w-2/5 h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
 
-        <div className=" bg-red-500 w-3/5  h-[600px] text-white  ">
-          <div className=" flex flex-col gap-10 p-24">
+        <div
+          ref={divRef2}
+          className=" bg-red-500 w-3/5  h-[600px] text-white  "
+        >
+          <div
+            className={`transition-transform duration-1000 ${
+              hasIntersected2 ? "translate-x-0" : " -translate-x-20 "
+            }  flex flex-col gap-10 p-24`}
+          >
             {" "}
             <div className="px-36 ">
               Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
@@ -37,12 +62,21 @@ export default function Hakkinda() {
       <div className=" w-full flex items-center justify-center p-10 relative">
         <div className="z-10 absolute bg-center bg-cover w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg/v1/fill/w_1521,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg)]   "></div>
         <div className="bg-white opacity-70 z-30 absolute w-full h-[600px]"></div>
-        <div className="z-30 w-3/6 flex flex-col gap-10 items-center justify-center">
+        <div
+          ref={divRef3}
+          className={`transition-opacity duration-1000 ${
+            hasIntersected3 ? "opacity-100" : "opacity-0"
+          } z-30 w-3/6 flex flex-col gap-10 items-center justify-center`}
+        >
           {" "}
           <div className=" text-4xl font-bold">Bizi Biz Yapanlar</div>
           <div className="flex items-center justify-center gap-10">
             {" "}
-            <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-full p-10 gap-5">
+            <div
+              className={`transition-transform duration-700 ${
+                hasIntersected3 ? "translate-x-0" : "-translate-x-20"
+              } bg-white rounded-2xl shadow-2xl flex flex-col w-full p-10 gap-5`}
+            >
               <div className="text-red-500 text-3xl font-bold">Başarı</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
@@ -50,8 +84,12 @@ export default function Hakkinda() {
                 harika bir yer.
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-full  p-10 gap-5">
-              <div className="text-red-500 text-3xl font-bold">Başarı</div>
+            <div
+              className={`transition-transform duration-700 ${
+                hasIntersected3 ? "translate-x-0" : "-translate-x-20"
+              } bg-white rounded-2xl shadow-2xl flex flex-col w-full  p-10 gap-5`}
+            >
+              <div className="text-red-500 text-3xl font-bold">Yaratıcılık</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
                 bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
@@ -59,7 +97,11 @@ export default function Hakkinda() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 p-10 bg-white rounded-2xl shadow-2xl">
+          <div
+            className={`transition-transform duration-700 ${
+              hasIntersected3 ? "translate-x-0" : "-translate-x-20"
+            } flex flex-col gap-5 p-10 bg-white rounded-2xl shadow-2xl`}
+          >
             <div className="text-red-500 text-3xl font-bold">Topluluk</div>
             <div>
               Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
@@ -70,12 +112,19 @@ export default function Hakkinda() {
         </div>{" "}
       </div>
       <div className="w-full  p-10  ">
-        <div className="bg-[#272443] w-full h-[600px] flex flex-col items-center">
+        <div
+          ref={divRef4}
+          className="bg-[#272443] w-full h-[600px] flex flex-col items-center"
+        >
           {" "}
           <div className=" text-white text-6xl font-bold w-full   text-center p-5">
             Kurucularımız
           </div>
-          <div className="flex items-center justify-center gap-10 w-full p-10">
+          <div
+            className={` transition-transform duration-1000 ${
+              hasIntersected4 ? "translate-y-0" : "translate-y-24"
+            }  flex items-center justify-center gap-10 w-full p-10`}
+          >
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
               <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
@@ -114,10 +163,17 @@ export default function Hakkinda() {
       <div className="w-full p-10 ">
         <div className=" relative flex items-center justify-between w-full h-[800px] ">
           <div className="absolute bg-cover bg-center w-full h-[800px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
-          <div className="z-10 bg-red-500 w-full h-[800px] absolute opacity-40  "></div>
+          <div
+            ref={divRef5}
+            className="z-10 bg-red-500 w-full h-[800px] absolute opacity-40  "
+          ></div>
           <div className="flex items-center justify-between p-36">
             {" "}
-            <div className="text-white z-20 p-10 w-1/2">
+            <div
+              className={` transition-transform duration-1000 ${
+                hasIntersected5 ? "translate-x-0" : "-translate-x-24"
+              } text-white z-20 p-10 w-1/2`}
+            >
               {" "}
               <div>Ofislerimiz</div>
               <div>İstanbul Stüdyomuz</div>
@@ -129,7 +185,11 @@ export default function Hakkinda() {
                 harika bir yer.
               </div>
             </div>{" "}
-            <div className="bg-white w-[300px] h-[400px]  z-20 flex flex-col items-start justify-around gap-4 p-5 border border-black rounded-2xl shadow-2xl ">
+            <div
+              className={` transition-transform duration-1000 ${
+                hasIntersected5 ? "translate-x-0" : "-translate-x-24"
+              } bg-white w-[300px] h-[400px]  z-20 flex flex-col items-start justify-around gap-4 p-5 border border-black rounded-2xl shadow-2xl`}
+            >
               <div className="-mt-24 bg-cover bg-center w-64 h-40  bg-[url(https://static.wixstatic.com/media/c837a6_bccaaf1515c64510884e82e1f8cc3618~mv2.png/v1/fill/w_315,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1763379488.png)]   "></div>
               <div>Sizinle Çalışmak İstiyoruz</div>
               <div>

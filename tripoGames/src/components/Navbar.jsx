@@ -60,7 +60,7 @@ export default function Navbar() {
             Hakkında
           </Link>
           <Link
-            to="/iletisim"
+            to="/"
             className="hover:bg-[#da392b] duration-500 hover:text-white rounded-br p-5"
           >
             İletişim
