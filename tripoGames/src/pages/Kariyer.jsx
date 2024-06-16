@@ -1,10 +1,12 @@
 export default function Kariyer() {
   return (
     <div className="flex flex-col w-full">
-      <div className="w-1/2">
-        <div>Gelin, Oyun Dünyasında Devrim Yaratalım</div>
-        <div>Ekibimize Katılın</div>
-        <div>
+      <div className="w-1/2 p-10 flex flex-col gap-4">
+        <div className="text-xl font-bold">
+          Gelin, Oyun Dünyasında Devrim Yaratalım
+        </div>
+        <div className="text-5xl font-bold">Ekibimize Katılın</div>
+        <div className="text-xl">
           Bu, bir paragraf. Kendi metninizi eklemek, özgün içerik girmek ve yazı
           tipinde değişiklik yapmak için “Metni Düzenle“ye tıklamanız ya da
           buraya çift tıklamanız yeterli. Burası bir hikâye anlatmak ve
@@ -12,8 +14,8 @@ export default function Kariyer() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full p-24">
-        <div className="bg-red-500 w-full h-[900px] flex flex-col items-center p-10">
-          <div className="font-bold text-2xl text-white">Açık Posizyonlar</div>
+        <div className="bg-red-500 w-full  flex flex-col items-center p-10">
+          <div className="font-bold text-4xl text-white">Açık Posizyonlar</div>
           <div className="flex items-center w-full justify-center p-10 gap-10">
             <div className="flex flex-col gap-5 ">
               <div className=" overflow-hidden group rounded-xl">

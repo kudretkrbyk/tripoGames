@@ -21,39 +21,36 @@ export default function Footer() {
           <div className="font-bold text-xl">Gezinti</div>
           <div className="flex flex-col gap-3">
             <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
+            <div>Kariyer</div>
+            <div>Hakkında</div>
+            <div>İletişim</div>
+            <div>Gizlilik Politikası</div>
+            <div>Şartlar ve Koşullar</div>
+            <div>Çere Politikası</div>
           </div>
         </div>
         <div className="flex flex-col gap-5 items-start justify-center w-full">
-          <div className="font-bold text-xl">Gezinti</div>
+          <div className="font-bold text-xl">Sosyal</div>
           <div className="flex flex-col gap-3">
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
+            <div>Discord</div>
+            <div>Twich</div>
+            <div>Facebook</div>
+            <div>Youtube</div>
+            <div>Twitter</div>
+            <div>LİnkedIn</div>
           </div>
         </div>
         <div className="flex flex-col gap-5 items-start justify-center w-full">
-          <div className="font-bold text-xl">Gezinti</div>
+          <div className="font-bold text-xl">Bizi Bulun</div>
           <div className="flex flex-col gap-3">
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
-            <div>Oyunlar</div>
+            <img
+              className="w-32 h-10"
+              src="https://static.wixstatic.com/media/c837a6_e5a608d569fd4c56bcfedec4a72bfbd9~mv2.png/v1/fill/w_180,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Apple%20Store.png"
+            ></img>
+            <img
+              className="w-32 h-10"
+              src="https://static.wixstatic.com/media/c837a6_382fdb7f2d0548b4abd0c3f53011a351~mv2.png/v1/fill/w_206,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Google%20Play.png"
+            ></img>
           </div>
         </div>
       </div>

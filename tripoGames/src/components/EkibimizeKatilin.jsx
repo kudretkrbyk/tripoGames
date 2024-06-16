@@ -1,7 +1,7 @@
 export default function EkibimizeKatilin() {
   return (
     <div className="w-full  flex flex-col relative  ">
-      <div className="border border-blue-500  w-full h-[700px] relative overflow-hidden ">
+      <div className="border border-blue-500  w-full h-screen relative overflow-hidden ">
         <div className=" bg-center bg-cover w-full h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg/v1/fill/w_1265,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg)]   "></div>
 
         <div className="absolute flex flex-col items-start justify-center w-full gap-10 p-20 top-0">
@@ -16,36 +16,40 @@ export default function EkibimizeKatilin() {
         <div className="absolute right-10 bottom-0 w-[500px] h-[400px]  bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_4577a1db5cfd48e5b5b655294b288c71~mv2.png/v1/fill/w_732,h_621,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/shutterstock_1806326989.png)]   "></div>
       </div>
 
-      <div className="w-full h-[600px] ">
+      <div className="w-full h-screen ">
         <div className="w-full h-[600px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
       </div>
-      <div className="absolute z-30 flex items-end justify-between w-full p-10 bottom-1/2 ">
+      <div className="absolute z-30 flex items-end justify-between w-full p-10 top-80 ">
         {" "}
-        <div className="z-30   shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-5 gap-10">
-          <div className="w-full">
-            <div>Bize Ulaşın</div>
-            <div>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</div>
+        <div className="z-30 w-3/12  shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-10 gap-10">
+          <div className="w-full gap-4 flex flex-col">
+            <div className="text-2xl font-bold">Bize Ulaşın</div>
+            <div className="text-xl">
+              Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
+            </div>
           </div>
 
           <div className="flex items-start justify-between gap-2 w-full">
-            <label className="flex flex-col">
+            <label className="flex flex-col w-36">
               Adı*
-              <input className="border border-red-500"></input>
+              <input className="border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
             </label>
-            <label className="flex flex-col">
-              Soy adı*<input className="border border-red-500"></input>
+            <label className="flex flex-col w-36">
+              Soy adı*
+              <input className="border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
             </label>
           </div>
 
           <div className=" w-full">
-            <label className="flex flex-col">
-              E-Posta* <input className="border border-red-500"></input>{" "}
+            <label className="flex flex-col w-full">
+              E-Posta*{" "}
+              <input className="border border-red-500 p-3 rounded-2xl focus:outline-none"></input>{" "}
             </label>
           </div>
           <div className=" w-full">
-            <label className="flex flex-col">
+            <label className="flex flex-col w-full">
               Bize mesaj bırakın...{" "}
-              <textarea className="h-32 border border-black"></textarea>
+              <textarea className="h-32 border border-black p-3 rounded-2xl"></textarea>
             </label>
           </div>
           <div className="w-full">

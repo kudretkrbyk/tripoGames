@@ -1,16 +1,14 @@
-import React from "react";
-
 export default function Hakkinda() {
   return (
-    <div className="flex flex-col w-full p-10">
-      <div>
-        <div>Biz Tripo'yuz</div>
-        <div>
+    <div className="flex flex-col w-full ">
+      <div className="flex flex-col gap-5 p-10 w-1/2">
+        <div className="text-xl font-bold">Biz Tripo'yuz</div>
+        <div className="text-5xl font-bold text-wrap">
           İnteraktif eğlencenin en iyi örneklerini vererek oyun anlayışını
           kökten değiştiriyoruz.
         </div>
       </div>
-      <div className="flex items-center justify-center w-full">
+      <div className="flex items-center justify-center w-full p-10">
         <div className=" bg-center bg-cover w-2/5 h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
 
         <div className=" bg-red-500 w-3/5  h-[600px] text-white  ">
@@ -24,9 +22,9 @@ export default function Hakkinda() {
             </div>
             <div className="px-36">
               Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
-              tanıtmak için harika bir yer. ​ Burası, şirketiniz ve
-              hizmetleriniz hakkında uzun bir metin yazmak için harika bir yer.
-              Bu alanı, şirketiniz ile ilgili daha ayrıntılı bilgi vermek için
+              tanıtmak için harika bir yer. ​Burası, şirketiniz ve hizmetleriniz
+              hakkında uzun bir metin yazmak için harika bir yer. Bu alanı,
+              şirketiniz ile ilgili daha ayrıntılı bilgi vermek için
               kullanabilirsiniz. Ekibinizden ve sunduğunuz hizmetlerden söz
               edin. Ziyaretçilerinize bu işi kurma fikrinin nasıl doğduğunu ve
               sizi rakiplerinizden ayıran özelliklerin neler olduğunu anlatın.
@@ -39,21 +37,21 @@ export default function Hakkinda() {
       <div className=" w-full flex items-center justify-center p-10 relative">
         <div className="z-10 absolute bg-center bg-cover w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg/v1/fill/w_1521,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg)]   "></div>
         <div className="bg-white opacity-70 z-30 absolute w-full h-[600px]"></div>
-        <div className="z-30 w-2/3 flex flex-col gap-10 items-center justify-center">
+        <div className="z-30 w-3/6 flex flex-col gap-10 items-center justify-center">
           {" "}
-          <div className="">Bizi Biz Yapanlar</div>
+          <div className=" text-4xl font-bold">Bizi Biz Yapanlar</div>
           <div className="flex items-center justify-center gap-10">
             {" "}
-            <div className="bg-white shadow-2xl flex flex-col w-full p-10 gap-5">
-              <div>Başarı</div>
+            <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-full p-10 gap-5">
+              <div className="text-red-500 text-3xl font-bold">Başarı</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
                 bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
                 harika bir yer.
               </div>
             </div>
-            <div className="bg-white shadow-2xl flex flex-col w-full  p-10 gap-5">
-              <div>Başarı</div>
+            <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-full  p-10 gap-5">
+              <div className="text-red-500 text-3xl font-bold">Başarı</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
                 bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
@@ -61,8 +59,8 @@ export default function Hakkinda() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 p-10 bg-white shadow-2xl">
-            <div>Topluluk</div>
+          <div className="flex flex-col gap-5 p-10 bg-white rounded-2xl shadow-2xl">
+            <div className="text-red-500 text-3xl font-bold">Topluluk</div>
             <div>
               Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
               bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
@@ -71,31 +69,80 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full bg-[#272443] h-[600px] p-10 flex flex-col items-center">
-        {" "}
-        <div className="text-white text-xl font-bold w-full border border-white text-center">
-          Kurucularımız
-        </div>
-        <div className="flex items-center justify-center gap-10 w-full p-10">
-          <div className="flex flex-col items-start gap-3 h-[600px] justify-center w-full group  overflow-hidden rounded-xl">
-            <div className="bg-center bg-cover w-full h-96 rounded-xl hover:scale-150 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
-            <div>Damla Sönmez</div>
-            <div>Teknolojiden Sorumlu Başkan</div>
+      <div className="w-full  p-10  ">
+        <div className="bg-[#272443] w-full h-[600px] flex flex-col items-center">
+          {" "}
+          <div className=" text-white text-6xl font-bold w-full   text-center p-5">
+            Kurucularımız
           </div>
-          <div className="flex flex-col items-center justify-center w-full ">
-            <div className="bg-center bg-cover w-full h-96 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
-            <div>Damla Sönmez</div>
-            <div>Teknolojiden Sorumlu Başkan</div>
+          <div className="flex items-center justify-center gap-10 w-full p-10">
+            <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
+              {" "}
+              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
+              </div>{" "}
+              <div>Damla Sönmez</div>
+              <div>Teknolojiden Sorumlu Başkan</div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
+              {" "}
+              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a879b65578d44053a49978975bc03c78~mv2.jpg/v1/fill/w_972,h_1292,fp_0.47_0.38,q_90/c837a6_a879b65578d44053a49978975bc03c78~mv2.webp)]   "></div>
+              </div>{" "}
+              <div>Bahadır Can</div>
+              <div>Teknolojiden Sorumlu Başkan</div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
+              {" "}
+              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.jpg/v1/fill/w_1215,h_1615,q_90/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.webp)]   "></div>
+              </div>{" "}
+              <div>Tan Sert</div>
+              <div>Teknolojiden Sorumlu Başkan</div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
+              {" "}
+              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.jpg/v1/fill/w_1210,h_1615,q_90/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.webp)]   "></div>
+              </div>{" "}
+              <div>Burak Yılmaz</div>
+              <div>Teknolojiden Sorumlu Başkan</div>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full ">
-            <div className="bg-center bg-cover w-full h-96 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
-            <div>Damla Sönmez</div>
-            <div>Teknolojiden Sorumlu Başkan</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-full ">
-            <div className="bg-center bg-cover w-full h-96 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
-            <div>Damla Sönmez</div>
-            <div>Teknolojiden Sorumlu Başkan</div>
+        </div>{" "}
+      </div>
+      <div className="w-full p-10 ">
+        <div className=" relative flex items-center justify-between w-full h-[800px] ">
+          <div className="absolute bg-cover bg-center w-full h-[800px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
+          <div className="z-10 bg-red-500 w-full h-[800px] absolute opacity-40  "></div>
+          <div className="flex items-center justify-between p-36">
+            {" "}
+            <div className="text-white z-20 p-10 w-1/2">
+              {" "}
+              <div>Ofislerimiz</div>
+              <div>İstanbul Stüdyomuz</div>
+              <div>
+                Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
+                İçeriğinizi eklemek ve yazı tipini değiştirmek için “Metni
+                Düzenle” düğmesine tıklayın veya buraya çift tıklayın. Burası,
+                bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
+                harika bir yer.
+              </div>
+            </div>{" "}
+            <div className="bg-white w-[300px] h-[400px]  z-20 flex flex-col items-start justify-around gap-4 p-5 border border-black rounded-2xl shadow-2xl ">
+              <div className="-mt-24 bg-cover bg-center w-64 h-40  bg-[url(https://static.wixstatic.com/media/c837a6_bccaaf1515c64510884e82e1f8cc3618~mv2.png/v1/fill/w_315,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1763379488.png)]   "></div>
+              <div>Sizinle Çalışmak İstiyoruz</div>
+              <div>
+                Bu, bir paragraf. Kendi metninizi eklemek ve düzenlemek için
+                tıklayın. Kullanıcılara kendinizi tanıtın.
+              </div>
+              <div>
+                <button className="bg-[#272443] p-2 px-5 rounded-xl hover:bg-red-500 duration-700">
+                  {" "}
+                  Fırsatları Keşfet
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

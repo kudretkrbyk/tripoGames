@@ -22,7 +22,7 @@ export default function TripoHakkinda() {
           className="w-[700px] h-[400px] rounded-xl "
           src="https://static.wixstatic.com/media/c837a6_6f124abbb84f4fceb066cb0cd5eb9e51~mv2.jpg/v1/crop/x_546,y_100,w_2248,h_1281/fill/w_1049,h_597,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1535881442_edited.jpg"
         ></img>
-        <div className="bg-red-700 opacity-0 group-hover:opacity-30 duration-500 w-[700px] h-[400px] absolute left-0 top-0"></div>
+        <div className="bg-red-700 rounded-xl opacity-0 group-hover:opacity-30 duration-500 w-[700px] h-[400px] absolute left-0 top-0"></div>
         <img
           className="absolute -left-16 bottom-0 w-60 h-60"
           src="https://static.wixstatic.com/media/c837a6_0253876c52cc473e888d7842bc048c43~mv2.png/v1/fill/w_342,h_369,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1768049210.png"
