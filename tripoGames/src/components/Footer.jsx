@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-5">
-      <div>
-        <button className="bg-red-500 p-4 rounded-b">Tripo Games</button>
+    <div className="bg-white z-40 w-full flex flex-col items-center justify-center gap-5">
+      <div className="z-40 ">
+        <button className="z-40 bg-red-500 p-4 rounded-b">Tripo Games</button>
       </div>
       <div>Müthiş Sürükleyici Bir Oyun Deneyimi</div>
       <div className="border-t border-black w-[600px]"></div>

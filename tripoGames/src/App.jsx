@@ -8,25 +8,28 @@ import Robotrix from "./pages/Robotrix";
 import Box from "./pages/Box";
 import Kariyer from "./pages/Kariyer";
 import Hakkinda from "./pages/Hakkinda";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
-    <Router>
-      <div className="relative">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/kipon" element={<Kipon />} />
-          <Route path="/robotrix" element={<Robotrix />} />
-          <Route path="/treasure-box" element={<Box />} />
-          <Route path="/kariyer" element={<Kariyer />} />
-          <Route path="/Hakkinda" element={<Hakkinda />} />
+    <ParallaxProvider>
+      <Router>
+        <div className="relative">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/kipon" element={<Kipon />} />
+            <Route path="/robotrix" element={<Robotrix />} />
+            <Route path="/treasure-box" element={<Box />} />
+            <Route path="/kariyer" element={<Kariyer />} />
+            <Route path="/Hakkinda" element={<Hakkinda />} />
 
-          {/* Diğer sayfalar için de benzer şekilde Route ekleyebilirsiniz */}
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+            {/* Diğer sayfalar için de benzer şekilde Route ekleyebilirsiniz */}
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ParallaxProvider>
   );
 }
 

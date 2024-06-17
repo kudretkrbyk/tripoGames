@@ -1,5 +1,6 @@
 import useIntersectionObserver from "../customJs/useIntersectionObserver"; // Hook'u import edin
 import { useRef } from "react";
+import { Parallax } from "react-scroll-parallax";
 export default function Hakkinda() {
   const divRef1 = useRef(null);
   const divRef2 = useRef(null);
@@ -26,7 +27,7 @@ export default function Hakkinda() {
           kökten değiştiriyoruz.
         </div>
       </div>
-      <div className="flex items-center justify-center w-full p-10">
+      <div className="z-30 flex items-center justify-center w-full p-10">
         <div className=" bg-center bg-cover w-2/5 h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
 
         <div
@@ -60,8 +61,13 @@ export default function Hakkinda() {
         </div>
       </div>
       <div className=" w-full flex items-center justify-center p-10 relative">
-        <div className="z-10 absolute bg-center bg-cover w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg/v1/fill/w_1521,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg)]   "></div>
-        <div className="bg-white opacity-70 z-30 absolute w-full h-[600px]"></div>
+        <div className="z-10 w-full absolute top-0">
+          <Parallax speed={-20}>
+            {" "}
+            <div className="z-20 absolute bg-center bg-cover w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg/v1/fill/w_1521,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg)]   "></div>
+            <div className="bg-white opacity-70 z-30 absolute w-full h-[600px]"></div>
+          </Parallax>
+        </div>
         <div
           ref={divRef3}
           className={`transition-opacity duration-1000 ${
@@ -77,7 +83,7 @@ export default function Hakkinda() {
                 hasIntersected3 ? "translate-x-0" : "-translate-x-20"
               } bg-white rounded-2xl shadow-2xl flex flex-col w-full p-10 gap-5`}
             >
-              <div className="text-red-500 text-3xl font-bold">Başarı</div>
+              <div className="z-30 text-red-500 text-3xl font-bold">Başarı</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası,
                 bir hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için
@@ -85,7 +91,7 @@ export default function Hakkinda() {
               </div>
             </div>
             <div
-              className={`transition-transform duration-700 ${
+              className={`transition-transform duration-700 z-30 ${
                 hasIntersected3 ? "translate-x-0" : "-translate-x-20"
               } bg-white rounded-2xl shadow-2xl flex flex-col w-full  p-10 gap-5`}
             >
@@ -111,7 +117,7 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full  p-10  ">
+      <div className="w-full z-30 p-10  ">
         <div
           ref={divRef4}
           className="bg-[#272443] w-full h-[600px] flex flex-col items-center"
@@ -162,11 +168,18 @@ export default function Hakkinda() {
       </div>
       <div className="w-full p-10 ">
         <div className=" relative flex items-center justify-between w-full h-[800px] ">
-          <div className="absolute bg-cover bg-center w-full h-[800px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
-          <div
-            ref={divRef5}
-            className="z-10 bg-red-500 w-full h-[800px] absolute opacity-40  "
-          ></div>
+          <div className="w-full absolute h-[750px] ">
+            {" "}
+            <Parallax speed={-15}>
+              {" "}
+              <div className="absolute bg-cover bg-center w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
+              <div
+                ref={divRef5}
+                className="z-10 bg-red-500 w-full h-[600px] absolute opacity-40  "
+              ></div>{" "}
+            </Parallax>
+          </div>
+
           <div className="flex items-center justify-between p-36">
             {" "}
             <div

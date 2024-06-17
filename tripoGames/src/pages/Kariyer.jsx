@@ -1,5 +1,6 @@
 import useIntersectionObserver from "../customJs/useIntersectionObserver"; // Hook'u import edin
 import { useRef } from "react";
+import { Parallax } from "react-scroll-parallax";
 export default function Kariyer() {
   const divRef1 = useRef(null);
   const divRef2 = useRef(null);
@@ -26,7 +27,7 @@ export default function Kariyer() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full p-24">
-        <div className="bg-red-500 w-full  flex flex-col items-center p-10">
+        <div className="z-20 bg-red-500 w-full  flex flex-col items-center p-10">
           <div className="font-bold text-4xl text-white">Açık Posizyonlar</div>
           <div className="flex items-center w-full justify-center p-10 gap-10">
             <div className="flex flex-col gap-5 ">
@@ -107,11 +108,13 @@ export default function Kariyer() {
             </div>
           </div>
         </div>
-        <div
-          ref={divRef2}
-          className="w-full h-[600px] flex relative  bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "
-        >
-          <div className="bg-gray-600 w-full h-[600px] absolute top-0 left-0 z-10 opacity-40"></div>
+
+        <div ref={divRef2} className="w-full h-[600px] flex relative     ">
+          {" "}
+          <Parallax speed={-20}>
+            <div className="-mt-24 absolute w-[1249px] h-[600px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]"></div>
+            <div className="-mt-24 bg-gray-600 w-[1249px] h-[600px] absolute top-0 left-0 z-10 opacity-40"></div>
+          </Parallax>
           <div
             className={` transition-opacity duration-1000 ${
               hasIntersected2 ? "opacity-100" : "opacity-0"

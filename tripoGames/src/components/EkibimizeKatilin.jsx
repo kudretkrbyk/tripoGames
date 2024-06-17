@@ -1,8 +1,13 @@
+import { Parallax } from "react-scroll-parallax";
+
 export default function EkibimizeKatilin() {
   return (
     <div className="w-full  flex flex-col relative  ">
       <div className="border border-blue-500  w-full h-screen relative overflow-hidden ">
-        <div className=" bg-center bg-cover w-full h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg/v1/fill/w_1265,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg)]   "></div>
+        <Parallax speed={-20}>
+          {" "}
+          <div className=" bg-center bg-cover w-full h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg/v1/fill/w_1265,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg)]   "></div>
+        </Parallax>
 
         <div className="absolute flex flex-col items-start justify-center w-full gap-10 p-20 top-0">
           <div className="text-xl">Ekimize Katılın</div>
@@ -17,7 +22,10 @@ export default function EkibimizeKatilin() {
       </div>
 
       <div className="w-full h-screen ">
-        <div className="w-full h-[600px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
+        <Parallax speed={-20}>
+          {" "}
+          <div className="w-full h-[600px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
+        </Parallax>
       </div>
       <div className="absolute z-30 flex items-end justify-between w-full p-10 top-72 ">
         {" "}
