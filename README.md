@@ -24,4 +24,6 @@ React-scroll-parallax: For the Parallax effect
 Custom Hooks (useIntersectionObserver): To create dynamic styling and effects by tracking the visibility of elements.
 
 
-![]("1.gif")
+![Demo GIF](https://github.com/kudretkrbyk/tripoGames/blob/main/tripoGames/gifs/1.gif)
+![Demo GIF](https://github.com/kudretkrbyk/tripoGames/blob/main/tripoGames/gifs/2.gif)
+![Demo GIF](https://github.com/kudretkrbyk/tripoGames/blob/main/tripoGames/gifs/3.gif)
