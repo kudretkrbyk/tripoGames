@@ -3,13 +3,13 @@ import { useRef } from "react";
 import { Parallax } from "react-scroll-parallax";
 export default function Hakkinda() {
   const divRef1 = useRef(null);
-  const divRef2 = useRef(null);
+
   const divRef3 = useRef(null);
   const divRef4 = useRef(null);
   const divRef5 = useRef(null);
 
   const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
-  const hasIntersected2 = useIntersectionObserver(divRef2, { threshold: 0.9 });
+
   const hasIntersected3 = useIntersectionObserver(divRef3, { threshold: 0.9 });
   const hasIntersected4 = useIntersectionObserver(divRef4, { threshold: 0.9 });
   const hasIntersected5 = useIntersectionObserver(divRef5, { threshold: 0.9 });
@@ -19,7 +19,7 @@ export default function Hakkinda() {
         ref={divRef1}
         className={`transition-transform duration-700 ${
           hasIntersected1 ? "translate-x-0" : "-translate-x-20"
-        } flex flex-col gap-5 p-10 w-1/2`}
+        } flex flex-col gap-5 p-10 w-full md:w-1/2`}
       >
         <div className="text-xl font-bold">Biz Tripo'yuz</div>
         <div className="text-5xl font-bold text-wrap">
@@ -27,26 +27,26 @@ export default function Hakkinda() {
           kökten değiştiriyoruz.
         </div>
       </div>
-      <div className="z-30 flex items-center justify-center w-full p-10">
-        <div className=" bg-center bg-cover w-2/5 h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
+      <div className="z-30 flex flex-col lg:flex-row items-center justify-center w-full p-10">
+        <div className=" bg-center bg-cover w-full lg:w-2/5  h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
 
         <div
-          ref={divRef2}
-          className=" bg-red-500 w-3/5  h-[600px] text-white  "
+          ref={divRef1}
+          className=" bg-red-500 w-full flex lg:w-3/5  h-[900px] text-white  "
         >
           <div
             className={`transition-transform duration-1000 ${
-              hasIntersected2 ? "translate-x-0" : " -translate-x-20 "
-            }  flex flex-col gap-10 p-24`}
+              hasIntersected1 ? "translate-x-0" : " -translate-x-20 "
+            }  flex flex-col gap-1 items-center justify-center w-full  p-12`}
           >
             {" "}
-            <div className="px-36 ">
+            <div className="p-10 px-5  w-full">
               Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
               İçeriğinizi eklemek ve yazı tipini değiştirmek için “Metni
               Düzenle”ye tıklayın veya buraya çift tıklayın. Bu alanı sayfanın
               istediğiniz bir yerine sürükleyip bırakabilirsiniz.
             </div>
-            <div className="px-36">
+            <div className="p-10 px-5  ">
               Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
               tanıtmak için harika bir yer. ​Burası, şirketiniz ve hizmetleriniz
               hakkında uzun bir metin yazmak için harika bir yer. Bu alanı,
@@ -60,8 +60,8 @@ export default function Hakkinda() {
           </div>
         </div>
       </div>
-      <div className=" w-full flex items-center justify-center p-10 relative">
-        <div className="z-10 w-full absolute top-0">
+      <div className=" w-full flex items-center justify-center p-10 relative overflow-hidden">
+        <div ref={divRef3} className="z-10 w-full absolute top-0">
           <Parallax speed={-20}>
             {" "}
             <div className="z-20 absolute bg-center bg-cover w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg/v1/fill/w_1521,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg)]   "></div>
@@ -69,14 +69,11 @@ export default function Hakkinda() {
           </Parallax>
         </div>
         <div
-          ref={divRef3}
-          className={`transition-opacity duration-1000 ${
-            hasIntersected3 ? "opacity-100" : "opacity-0"
-          } z-30 w-3/6 flex flex-col gap-10 items-center justify-center`}
+          className={`transition-opacity duration-1000 z-30 w-full md:w-3/6 flex flex-col gap-10 items-center justify-center overflow-hidden`}
         >
           {" "}
           <div className=" text-4xl font-bold">Bizi Biz Yapanlar</div>
-          <div className="flex items-center justify-center gap-10">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
             {" "}
             <div
               className={`transition-transform duration-700 ${
@@ -117,10 +114,10 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full z-30 p-10  ">
+      <div className="w-full h-full z-30 p-10  ">
         <div
           ref={divRef4}
-          className="bg-[#272443] w-full h-[600px] flex flex-col items-center"
+          className="bg-[#272443] w-full  lg:h-[600px] flex flex-col items-center"
         >
           {" "}
           <div className=" text-white text-6xl font-bold w-full   text-center p-5">
@@ -128,37 +125,37 @@ export default function Hakkinda() {
           </div>
           <div
             className={` transition-transform duration-1000 ${
-              hasIntersected4 ? "translate-y-0" : "translate-y-24"
-            }  flex items-center justify-center gap-10 w-full p-10`}
+              hasIntersected4 ? "translate-y-0" : "translate-y-36"
+            }  flex flex-col lg:flex-row items-center justify-center gap-10 w-full p-10`}
           >
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
-              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
-                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
+              <div className=" w-full h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-full h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg/v1/fill/w_972,h_1292,fp_0.5_0.46,q_90/c837a6_b037837537d748ae8f29d375c11cc7c1~mv2.jpg)]   "></div>
               </div>{" "}
               <div>Damla Sönmez</div>
               <div>Teknolojiden Sorumlu Başkan</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
-              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
-                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a879b65578d44053a49978975bc03c78~mv2.jpg/v1/fill/w_972,h_1292,fp_0.47_0.38,q_90/c837a6_a879b65578d44053a49978975bc03c78~mv2.webp)]   "></div>
+              <div className=" w-full h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-full h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a879b65578d44053a49978975bc03c78~mv2.jpg/v1/fill/w_972,h_1292,fp_0.47_0.38,q_90/c837a6_a879b65578d44053a49978975bc03c78~mv2.webp)]   "></div>
               </div>{" "}
               <div>Bahadır Can</div>
               <div>Teknolojiden Sorumlu Başkan</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
-              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
-                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.jpg/v1/fill/w_1215,h_1615,q_90/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.webp)]   "></div>
+              <div className=" w-full h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-full h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.jpg/v1/fill/w_1215,h_1615,q_90/c837a6_698f5b147b464ade9a05a8bded6799c7~mv2.webp)]   "></div>
               </div>{" "}
               <div>Tan Sert</div>
               <div>Teknolojiden Sorumlu Başkan</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
-              <div className=" w-60 h-80    group  overflow-hidden rounded-xl">
-                <div className="bg-center bg-cover w-60 h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.jpg/v1/fill/w_1210,h_1615,q_90/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.webp)]   "></div>
+              <div className=" w-full h-80    group  overflow-hidden rounded-xl">
+                <div className="bg-center bg-cover w-full h-80 rounded-xl hover:scale-110 duration-1000 bg-[url(https://static.wixstatic.com/media/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.jpg/v1/fill/w_1210,h_1615,q_90/c837a6_a9344c3157b04a70bcf20a9b0ad4e463~mv2.webp)]   "></div>
               </div>{" "}
               <div>Burak Yılmaz</div>
               <div>Teknolojiden Sorumlu Başkan</div>
@@ -166,26 +163,26 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full p-10 ">
+      <div className="w-full p-10 lg:-mt-48 ">
         <div className=" relative flex items-center justify-between w-full h-[800px] ">
-          <div className="w-full absolute h-[750px] ">
+          <div className="w-full absolute h-[1000px] ">
             {" "}
             <Parallax speed={-15}>
               {" "}
-              <div className="absolute bg-cover bg-center w-full h-[600px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
+              <div className="absolute bg-cover bg-center w-full h-[700px] bg-[url(https://static.wixstatic.com/media/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg/v1/fill/w_1521,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg)]"></div>
               <div
                 ref={divRef5}
-                className="z-10 bg-red-500 w-full h-[600px] absolute opacity-40  "
+                className="z-10 bg-red-500 w-full h-[700px] absolute opacity-40  "
               ></div>{" "}
             </Parallax>
           </div>
 
-          <div className="flex items-center justify-between p-36">
+          <div className="flex flex-col gap-10 -mb-24 lg:flex-row  items-center justify-between p-10 lg:p-36 ">
             {" "}
             <div
               className={` transition-transform duration-1000 ${
                 hasIntersected5 ? "translate-x-0" : "-translate-x-24"
-              } text-white z-20 p-10 w-1/2`}
+              } text-white z-20 lg:p-10 w-full lg:w-1/2 `}
             >
               {" "}
               <div>Ofislerimiz</div>

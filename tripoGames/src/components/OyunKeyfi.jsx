@@ -3,9 +3,9 @@ import { FaGooglePlay } from "react-icons/fa";
 
 export default function OyunKeyfi() {
   return (
-    <div className="   w-full  ">
+    <div className="z-20   w-full p-20 ">
       <div className="z-20 absolute left-0 top-0 bg-cover bg-center w-full h-screen bg-[url(https://static.wixstatic.com/media/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg/v1/fill/w_1518,h_800,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg)]"></div>
-      <div className="z-30  flex flex-col items-start justify-center gap-10 p-10 border border-black">
+      <div className="z-30  flex flex-col items-start justify-center gap-10 p-10 ">
         {" "}
         <div className="z-30 text-8xl ">Oyun Keyfiniz...</div>
         <div className="z-30">Mobil Oyunda Bir Numara</div>

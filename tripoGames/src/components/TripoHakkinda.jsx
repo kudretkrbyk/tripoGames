@@ -1,6 +1,6 @@
 export default function TripoHakkinda() {
   return (
-    <div className="flex flex-col w-full  items-center justify-center gap-10 p-10 text-center border border-black">
+    <div className="flex flex-col w-full  items-center justify-center gap-10 p-10 text-center overflow-hidden ">
       <div className="w-1/2 text-xl font-bold">Tripo Hakkında</div>
       <div className="w-1/2 text-5xl font-bold">
         Bir Numaralı Mobil Eğlence Kaynağınız

@@ -6,8 +6,8 @@ export default function Footer() {
       </div>
       <div>Müthiş Sürükleyici Bir Oyun Deneyimi</div>
       <div className="border-t border-black w-[600px]"></div>
-      <div className="flex items-start justify-center gap-10 p-20 w-full">
-        <div className="flex flex-col gap-5 items-start justify-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-start justify-center p-20 w-full">
+        <div className="flex flex-col gap-5 items-start justify-center w-full  ">
           <div className="font-bold text-xl">İletişim</div>
           <div className="flex flex-col gap-3">
             <div>bilgi@sitem.com</div>
@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 items-start justify-center w-full">
+        <div className="flex flex-col gap-5 items-start justify-center w-full  ">
           <div className="font-bold text-xl">Gezinti</div>
           <div className="flex flex-col gap-3">
             <div>Oyunlar</div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <div>Çere Politikası</div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 items-start justify-center w-full">
+        <div className="flex flex-col gap-5 items-start justify-center w-full  ">
           <div className="font-bold text-xl">Sosyal</div>
           <div className="flex flex-col gap-3">
             <div>Discord</div>
@@ -40,7 +40,7 @@ export default function Footer() {
             <div>LİnkedIn</div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 items-start justify-center w-full">
+        <div className="flex flex-col gap-5 items-start justify-center w-full  ">
           <div className="font-bold text-xl">Bizi Bulun</div>
           <div className="flex flex-col gap-3">
             <img

@@ -8,8 +8,8 @@ export default function Oyunlarimiz() {
   const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
 
   return (
-    <div className="bg-gray-200 relative flex flex-col gap-56 p-10 w-full  bg-cover items-center justify-center  overflow-hidden">
-      <div className="h-[1200px] w-full absolute bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png/v1/fill/w_1265,h_1185,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png)]"></div>
+    <div className="bg-gray-200 relative flex flex-col gap-5 md:gap-56 p-10 w-full  bg-cover items-center justify-center  overflow-hidden">
+      <div className="h-[600px] md:h-[1400px] left-0 top-48 md:top-10 w-full absolute bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png/v1/fill/w_1265,h_1185,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png)]"></div>
       <div className=" w-full flex flex-col items-center justify-center gap-5 z-30">
         <div className="text-4xl font-bold">Oyunlarımız</div>
         <div className="text-center  text-xl w-2/5">
@@ -18,7 +18,7 @@ export default function Oyunlarimiz() {
           bir yer.
         </div>
       </div>
-      <div className="flex items-center justify-between w-full z-30">
+      <div className=" flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between w-full z-30">
         <div
           ref={divRef1}
           className={`transition-transform duration-700 ${
@@ -84,7 +84,7 @@ export default function Oyunlarimiz() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full z-30">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between w-full z-30">
         <div
           ref={divRef2}
           className={`transition-transform duration-700 ${
