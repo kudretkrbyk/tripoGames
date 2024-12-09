@@ -2,7 +2,7 @@ import { Parallax } from "react-scroll-parallax";
 
 export default function EkibimizeKatilin() {
   return (
-    <div className="w-full  flex flex-col  relative  ">
+    <div className="w-full  flex flex-col  relative   ">
       <div className="  w-full  relative overflow-hidden  ">
         <div className="w-full h-[1100px] relative  ">
           <Parallax speed={-20}>
@@ -27,15 +27,15 @@ export default function EkibimizeKatilin() {
         </div>
       </div>
 
-      <div className="w-full h-[1100px] -mt-10 ">
+      <div className="w-full  h-full  border border-red-900 overflow-hidden -mt-[500px] md:-mt-60 ">
         <Parallax speed={-20}>
           {" "}
-          <div className="w-full h-[800px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
+          <div className="w-full h-[1000px]  md:h-[800px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>
         </Parallax>
       </div>
-      <div className="absolute z-30 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between gap-10 w-full p-10 top-1/3 ">
+      <div className=" absolute z-30 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between gap-10 sm:gap-10 md:gap-40 xl:gap-96 w-full p-10 top-1/3 md:top-1/2  ">
         {" "}
-        <div className="z-30 w-full md:w-4/12  shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-10 gap-10">
+        <div className="z-30 w-full    shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-5 md:p-10 gap-4 md:gap-10">
           <div className="w-full gap-4 flex flex-col">
             <div className="text-2xl font-bold">Bize Ulaşın</div>
             <div className="text-xl">
@@ -43,15 +43,18 @@ export default function EkibimizeKatilin() {
             </div>
           </div>
 
-          <div className="flex items-start justify-between gap-2 w-full">
-            <label className="flex flex-col w-36">
-              Adı*
-              <input className="border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
-            </label>
-            <label className="flex flex-col w-36">
-              Soy adı*
-              <input className="border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
-            </label>
+          <div className="flex items-start justify-between gap-4 w-full">
+            <div className="flex flex-col md:flex-row w-full gap-2 justify-between items-center">
+              {" "}
+              <label className="flex flex-col w-full">
+                Adı*
+                <input className="w-full border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
+              </label>
+              <label className="flex flex-col w-full">
+                Soy adı*
+                <input className="w-full border border-red-500 p-3 rounded-2xl focus:outline-none"></input>
+              </label>
+            </div>
           </div>
 
           <div className=" w-full">
@@ -72,7 +75,7 @@ export default function EkibimizeKatilin() {
             </button>
           </div>
         </div>
-        <div className=" bg-red-500 w-full md:w-4/12 h-60 rounded-xl p-5 flex flex-col gap-10 items-start justify-start">
+        <div className=" bg-red-500 w-full  h-40 md:h-60 rounded-xl p-5 flex flex-col gap-2 md:gap-10 items-start justify-start">
           <div className="text-white w-full">Bültenimize Abone Olun</div>
 
           <label className="flex flex-col w-full  ">
