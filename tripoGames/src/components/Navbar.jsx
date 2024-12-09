@@ -112,7 +112,7 @@ export default function Navbar() {
             <div className="fixed left-0 top-0 h-screen w-full flex flex-col items-center justify-center bg-white shadow-xl rounded-b z-20 ">
               <div>
                 <IoCloseSharp
-                  className="size-10 fixed right-5 top-5"
+                  className="size-11 fixed right-8 top-5"
                   onClick={handleMobileMenuControl}
                 />
               </div>
