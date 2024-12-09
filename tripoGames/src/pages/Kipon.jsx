@@ -32,7 +32,7 @@ export default function Kipon() {
               <div>Gündelik-Ücretsiz</div>
             </div>
           </div>
-          <div className="text-5xl font-bold">
+          <div className="md:text-5xl font-bold">
             Sınırsız Heyecanı Parmak Uçlarınıza Getiren Benzersiz Bir Oyun.
           </div>
           <div>
@@ -65,8 +65,8 @@ export default function Kipon() {
         </div>
       </div>
       <div className="flex flex-col w-full p-10">
-        <div className="flex items-center justify-start gap-5 p-5">
-          <div className="w-60 h-48 bg-white rounded-xl shadow-xl flex items-center justify-center">
+        <div className="flex items-center md:justify-start justify-center gap-5 p-5">
+          <div className="w-60 h-20 md:h-48 bg-white rounded-xl shadow-xl flex items-center justify-center">
             <div className="bg-red-500 w-48 h-10 rounded-full flex items-center justify-between p-1">
               <img className="w-8 h-8 p-2" src={StarIcon} alt="Icon" />
               <div className=" w-36 h-8 rounded-full bg-white flex items-center justify-center">
@@ -118,9 +118,9 @@ export default function Kipon() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full">
-        <div className="bg-white w-full md:w-1/2 lg:w-1/3 flex flex-col gap-10 items-center justify-center shadow-2xl p-10">
-          <div className="text-5xl font-bold text-nowrap">Hemen Oynayın</div>
+      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full ">
+        <div className="bg-white w-full md:w-2/3 flex flex-col gap-10 items-center justify-center shadow-2xl p-10">
+          <div className="text-5xl font-bold">Hemen Oynayın</div>
           <div className="flex w-full items-center justify-center gap-5">
             {" "}
             <img

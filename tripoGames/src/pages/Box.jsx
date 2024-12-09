@@ -19,9 +19,9 @@ export default function Box() {
 
         <div
           ref={divRef1}
-          className={`absolute top-0 right-1/2 transition-transform duration-700 ${
+          className={`absolute top-0 right-10 md:right-1/2 transition-transform duration-700 ${
             hasIntersected1 ? "translate-x-0" : "-translate-x-full"
-          } w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
+          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
         >
           <div className="flex items-center justify-start gap-2">
             {" "}
@@ -32,7 +32,7 @@ export default function Box() {
               <div>Gündelik-Ücretsiz</div>
             </div>
           </div>
-          <div className="text-5xl font-bold">
+          <div className=" md:text-5xl font-bold">
             Sınırsız Heyecanı Parmak Uçlarınıza Getiren Benzersiz Bir Oyun.
           </div>
           <div>
@@ -54,8 +54,8 @@ export default function Box() {
         </div>
       </div>
       <div className="flex flex-col w-full p-10">
-        <div className="flex items-center justify-start gap-5 p-5">
-          <div className="w-60 h-48 bg-white rounded-xl shadow-xl flex items-center justify-center">
+        <div className="flex items-center md:justify-start justify-center gap-5 p-5">
+          <div className="w-60 h-20 md:h-48 bg-white rounded-xl shadow-xl flex items-center justify-center">
             <div className="bg-red-500 w-48 h-10 rounded-full flex items-center justify-between p-1">
               <img className="w-8 h-8 p-2" src={StarIcon} alt="Icon" />
               <div className=" w-36 h-8 rounded-full bg-white flex items-center justify-center">
@@ -65,15 +65,15 @@ export default function Box() {
           </div>
           <div>Yorumlar</div>
         </div>
-        <div className="flex border border-black w-full h-96">
-          <div className="w-1/3 border-r border-black flex flex-col items-start justify-center gap-5 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-3  border border-black w-full ">
+          <div className="w-full  border-b md:border-b-0 md:border-r border-black flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin ekleyin.”
             </div>
             <div className="font-bold text-xl">Cenk Rua</div>
           </div>
-          <div className="w-1/3 border-r border-black flex flex-col items-start justify-center gap-5 p-10">
+          <div className="w-full  border-b md:border-b-0 md:border-r border-black flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin eklemek için tıklayın. Müşterileriniz
@@ -81,7 +81,7 @@ export default function Box() {
             </div>
             <div className="font-bold text-xl">Emir Akkan</div>
           </div>
-          <div className="w-1/3 flex flex-col items-start justify-center gap-5 p-10">
+          <div className="w-full  flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin ekleyin.”
@@ -107,8 +107,8 @@ export default function Box() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full">
-        <div className="bg-white w-1/3 flex flex-col gap-10 items-center justify-center shadow-2xl p-10">
+      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full ">
+        <div className="bg-white w-full md:w-2/3 flex flex-col gap-10 items-center justify-center shadow-2xl p-10">
           <div className="text-5xl font-bold">Hemen Oynayın</div>
           <div className="flex w-full items-center justify-center gap-5">
             {" "}

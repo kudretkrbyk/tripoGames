@@ -19,9 +19,9 @@ export default function Robotrix() {
 
         <div
           ref={divRef1}
-          className={`absolute top-5 left-5  transition-transform duration-700 ${
+          className={`absolute top-0 right-10 md:right-1/2 transition-transform duration-700 ${
             hasIntersected1 ? "translate-x-0" : "-translate-x-full"
-          } w-1/2 md:w-2/5  xl:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
+          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
         >
           <div className="flex items-center justify-start gap-2">
             {" "}
@@ -65,15 +65,15 @@ export default function Robotrix() {
           </div>
           <div>Yorumlar</div>
         </div>
-        <div className="flex border border-black w-full h-[500px] md:h-96">
-          <div className="w-full h-full border-r border-black flex flex-col items-start justify-between gap-5 p-5 md:p-10">
+        <div className="grid grid-cols-1 md:grid-cols-3  border border-black w-full ">
+          <div className="w-full  border-b md:border-b-0 md:border-r border-black flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin ekleyin.”
             </div>
             <div className="font-bold text-xl">Cenk Rua</div>
           </div>
-          <div className="w-full h-full border-r border-black flex flex-col items-start justify-between gap-5 p-5 md:p-10">
+          <div className="w-full  border-b md:border-b-0 md:border-r border-black flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin eklemek için tıklayın. Müşterileriniz
@@ -81,7 +81,7 @@ export default function Robotrix() {
             </div>
             <div className="font-bold text-xl">Emir Akkan</div>
           </div>
-          <div className="w-full h-full flex flex-col items-start justify-between gap-5 p-5 md:p-10">
+          <div className="w-full  flex flex-col items-start justify-center gap-5 p-10">
             <div>
               “Bu, bir müşteri görüşü. Siz ve hizmetleriniz hakkında olumlu
               şeyler anlatan bir metin ekleyin.”
@@ -106,7 +106,7 @@ export default function Robotrix() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full border border-black">
+      <div className="flex flex-col items-center justify-center gap-10 p-5    w-full ">
         <div className="bg-white w-full md:w-2/3 flex flex-col gap-10 items-center justify-center shadow-2xl p-10">
           <div className="text-5xl font-bold">Hemen Oynayın</div>
           <div className="flex w-full items-center justify-center gap-5">
