@@ -35,7 +35,7 @@ export default function EkibimizeKatilin() {
       </div>
       <div className="absolute z-30 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between gap-10 w-full p-10 top-1/3 ">
         {" "}
-        <div className="z-30 w-full md:w-3/12  shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-10 gap-10">
+        <div className="z-30 w-full md:w-4/12  shadow-xl bg-white  rounded-xl   flex flex-col items-center justify-start p-10 gap-10">
           <div className="w-full gap-4 flex flex-col">
             <div className="text-2xl font-bold">Bize Ulaşın</div>
             <div className="text-xl">
@@ -72,13 +72,13 @@ export default function EkibimizeKatilin() {
             </button>
           </div>
         </div>
-        <div className=" bg-red-500 w-full md:w-3/12 h-60 rounded-xl p-5 flex flex-col gap-10 items-start justify-start">
+        <div className=" bg-red-500 w-full md:w-4/12 h-60 rounded-xl p-5 flex flex-col gap-10 items-start justify-start">
           <div className="text-white w-full">Bültenimize Abone Olun</div>
 
-          <label className="flex flex-col ">
+          <label className="flex flex-col w-full  ">
             E-posta*
-            <div className="flex gap-4">
-              <input className="p-4 rounded-xl"></input>
+            <div className="flex gap-4 w-full ">
+              <input className="p-4 rounded-xl w-full"></input>
               <button className="bg-yellow-500 p-4 rounded-xl px-6">
                 Katıl
               </button>
