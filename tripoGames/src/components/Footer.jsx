@@ -5,7 +5,7 @@ export default function Footer() {
         <button className="z-40 bg-red-500 p-4 rounded-b">Tripo Games</button>
       </div>
       <div>Müthiş Sürükleyici Bir Oyun Deneyimi</div>
-      <div className="border-t border-black w-[600px]"></div>
+      <div className="border-t border-black w-full"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-start justify-center p-20 w-full">
         <div className="flex flex-col gap-5 items-start justify-center w-full  ">
           <div className="font-bold text-xl">İletişim</div>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-black w-[600px]"></div>
+      <div className="border-t border-black w-full"></div>
       <div className="p-10">© 2035, Tripo. Wix.com ile oluşturuldu.</div>
     </div>
   );

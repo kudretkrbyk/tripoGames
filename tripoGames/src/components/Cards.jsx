@@ -1,6 +1,6 @@
 export default function Cards() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 z-30 w-full p-5">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 z-30 w-full p-5 ">
       <div className="z-30 relative  flex flex-col items-center  justify-end w-80  md:w-60 h-80 rounded-xl  group overflow-hidden  ">
         <div className="absolute rounded-xl group-hover:scale-110 duration-700 w-full h-80 bg-cover bg-center bg-[url(https://static.wixstatic.com/media/c837a6_d5b3b2009d894fa2932bc20684b2a93d~mv2.jpg/v1/fit/w_960,h_1280,q_90/c837a6_d5b3b2009d894fa2932bc20684b2a93d~mv2.webp)]"></div>
 
