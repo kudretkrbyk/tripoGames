@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-black w-full"></div>
-      <div className="p-10">© 2035, Tripo. Wix.com ile oluşturuldu.</div>
+      <div className="p-5 md:p-10">© 2035, Tripo. Wix.com ile oluşturuldu.</div>
     </div>
   );
 }
