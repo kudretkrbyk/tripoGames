@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 export default function Kipon() {
   const divRef1 = useRef(null);
 
-  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
+  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.5 });
   return (
     <div className="flex flex-col w-full py-10 overflow-hidden">
       <div className="relative py-10 w-full ">
@@ -21,7 +21,7 @@ export default function Kipon() {
           ref={divRef1}
           className={`absolute top-0 right-10 md:right-1/2 transition-transform duration-700 ${
             hasIntersected1 ? "translate-x-0" : "-translate-x-full"
-          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-3 md:p-10 mt-12 md:mt-0`}
+          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-3 md:p-10 mt-12 md:mt-5`}
         >
           <div className="flex items-center justify-start gap-2 ">
             {" "}
