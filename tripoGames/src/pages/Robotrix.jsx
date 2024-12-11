@@ -7,8 +7,8 @@ export default function Robotrix() {
 
   const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
   return (
-    <div ref={divRef1} className="flex flex-col w-full py-10">
-      <div className="relative py-10 ">
+    <div ref={divRef1} className="flex flex-col w-full py-10 overflow-hidden">
+      <div className="relative py-10 w-full ">
         <Parallax speed={-20}>
           {" "}
           <div className="w-full  h-[800px]  ">
