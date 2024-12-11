@@ -14,30 +14,30 @@ export default function Hakkinda() {
   const hasIntersected4 = useIntersectionObserver(divRef4, { threshold: 0.9 });
   const hasIntersected5 = useIntersectionObserver(divRef5, { threshold: 0.9 });
   return (
-    <div className="flex flex-col w-full h-full py-10">
+    <div ref={divRef1} className="flex flex-col w-full h-full py-10">
       <div
         ref={divRef1}
         className={`transition-transform duration-700 ${
           hasIntersected1 ? "translate-x-0" : "-translate-x-20"
         } flex flex-col gap-5 p-10 w-full md:w-1/2`}
       >
-        <div className="text-xl font-bold">Biz Tripo'yuz</div>
-        <div className="text-5xl font-bold text-wrap">
+        <div className="text-xl ">Biz Tripo'yuz</div>
+        <div className="text-3xl md:text-5xl font-bold text-wrap">
           İnteraktif eğlencenin en iyi örneklerini vererek oyun anlayışını
           kökten değiştiriyoruz.
         </div>
       </div>
-      <div className="z-30 flex flex-col lg:flex-row items-center justify-center w-full p-10">
-        <div className=" bg-center bg-cover w-full lg:w-2/5  h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
+      <div className="z-30 flex flex-col xl:flex-row items-center justify-center w-full p-3 md:p-10">
+        <div className=" bg-center bg-cover w-full xl:w-2/5  h-[900px] bg-[url(https://static.wixstatic.com/media/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg/v1/fill/w_730,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7d351363fc2d4e1da3f6971e3951b8ea~mv2.jpg)]   "></div>
 
         <div
           ref={divRef1}
-          className=" bg-red-500 w-full flex lg:w-3/5  h-[900px] text-white  "
+          className=" bg-red-500 w-full flex xl:w-3/5  h-full xl:h-[900px] text-white  "
         >
           <div
             className={`transition-transform duration-1000 ${
               hasIntersected1 ? "translate-x-0" : " -translate-x-20 "
-            }  flex flex-col gap-1 items-center justify-center w-full  p-12`}
+            }  flex flex-col gap-1 items-center justify-center w-full p-3 md:p-10 `}
           >
             {" "}
             <div className=" p-1 md:p-10   w-full">
@@ -164,7 +164,7 @@ export default function Hakkinda() {
         </div>{" "}
       </div>
       <div className="w-full p-3 md:p-10 -mt-[250px] xl:-mt-60 h-full">
-        <div className=" relative flex items-center justify-between w-full h-[800px] border border-black">
+        <div className=" relative flex items-center justify-between w-full h-[800px]">
           <div className="w-full absolute h-[1000px] ">
             {" "}
             <Parallax speed={-15}>
