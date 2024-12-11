@@ -120,13 +120,13 @@ export default function Hakkinda() {
           className="bg-[#272443] w-full h-full xl:h-[600px] flex flex-col items-center justify-center"
         >
           {" "}
-          <div className=" text-white text-4xl md:text-5xl xl:text-6xl font-bold w-full   text-center p-5 border border-red-500">
+          <div className=" text-white text-4xl md:text-5xl xl:text-6xl font-bold w-full   text-center p-5 ">
             Kurucularımız
           </div>
           <div
             className={` transition-transform duration-1000 ${
               hasIntersected4 ? "translate-y-0" : "translate-y-36"
-            }  flex flex-col lg:flex-row items-center justify-center gap-10 w-full p-10 h-full border border-yellow-500`}
+            }  flex flex-col lg:flex-row items-center justify-center gap-10 w-full p-10 h-full `}
           >
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
