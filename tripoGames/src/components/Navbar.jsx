@@ -41,7 +41,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`fixed w-full z-50 transition-transform duration-300 ${
+      className={`px-2 fixed w-full z-50 transition-transform duration-300 ${
         showNavbar ? "md:translate-y-0" : "md:-translate-y-full"
       }`}
     >
