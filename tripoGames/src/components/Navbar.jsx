@@ -41,7 +41,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`px-2 fixed w-full z-50 transition-transform duration-300 ${
+      className={` fixed w-full z-50 transition-transform duration-300 ${
         showNavbar ? "md:translate-y-0" : "md:-translate-y-full"
       }`}
     >
@@ -119,6 +119,7 @@ export default function Navbar() {
               <Link
                 to="/"
                 className="z-0 bg-[#da392b] p-5 rounded-bl text-white"
+                onClick={handleMobileMenuControl}
               >
                 Anasayfa
               </Link>
@@ -170,7 +171,7 @@ export default function Navbar() {
                 Hakkında
               </Link>
               <Link
-                to="/iletisim"
+                to="/"
                 className="hover:bg-[#da392b] duration-500 hover:text-white rounded-br p-5"
                 onClick={handleMobileMenuControl}
               >
