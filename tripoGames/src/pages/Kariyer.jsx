@@ -26,18 +26,20 @@ export default function Kariyer() {
           kullanıcılarınızın sizi tanımasını sağlamak için harika bir yer.
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full border border-black p-1 md:p-20 xl:p-24 overflow-hidden">
-        <div className="z-20 bg-red-500 w-full  flex flex-col items-center p-5 overflow-hidden">
+      <div className="flex flex-col items-center justify-center w-full  p-1 md:p-20 xl:p-24 overflow-hidden">
+        <div className="z-20 bg-red-500 w-full  flex flex-col items-center p-10 ">
           <div className="font-bold text-4xl text-white">Açık Posizyonlar</div>
           <div className="flex flex-col lg:flex-row items-center w-full justify-center p-10 gap-5 lg:gap-24">
             <div className="flex flex-col items-center justify-center gap-5 ">
-              <div className=" overflow-hidden group w-80 lg:w-48 rounded-xl">
-                <div className="bg-center bg-cover w-80 lg:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
+              <div className=" overflow-hidden flex items-center justify-center group w-60 xl:w-48 rounded-xl">
+                <div className="bg-center bg-cover w-60 xl:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
               </div>
-              <div className="flex flex-col gap-3 text-white">
-                <div className="font-bold text-xl">Topluluk Yöneticisi</div>
+              <div className="flex flex-col items-start justify-center gap-3 text-white w-full">
+                <div className="font-bold text-xl w-full">
+                  Topluluk Yöneticisi
+                </div>
                 <div>İstanbul</div>
-                <div className="w-80 lg:w-48">
+                <div className="w-full">
                   Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
                   Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
                   tanıtmak için harika bir yer.
@@ -50,13 +52,13 @@ export default function Kariyer() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-5 ">
-              <div className=" overflow-hidden group w-80 lg:w-48 rounded-xl">
-                <div className="bg-center bg-cover w-80 lg:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
+              <div className=" overflow-hidden group w-60 xl:w-48 rounded-xl">
+                <div className="bg-center bg-cover w-60 xl:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
               </div>
-              <div className="flex flex-col gap-3 items-center justify-center text-white">
+              <div className="flex flex-col gap-3 items-start justify-center text-white">
                 <div className="font-bold text-xl">Topluluk Yöneticisi</div>
                 <div>İstanbul</div>
-                <div className="w-80 lg:w-48">
+                <div className="w-full">
                   Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
                   Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
                   tanıtmak için harika bir yer.
@@ -69,13 +71,13 @@ export default function Kariyer() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-5 ">
-              <div className=" overflow-hidden group rounded-xl w-80 lg:w-48">
-                <div className="bg-center bg-cover w-80 lg:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
+              <div className=" overflow-hidden group rounded-xl w-60 xl:w-48">
+                <div className="bg-center bg-cover w-60 xl:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
               </div>
-              <div className="flex flex-col gap-3 text-white">
+              <div className="flex flex-col items-start justify-center gap-3 text-white">
                 <div className="font-bold text-xl">Topluluk Yöneticisi</div>
                 <div>İstanbul</div>
-                <div className="w-80 lg:w-48">
+                <div className="w-full">
                   Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
                   Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
                   tanıtmak için harika bir yer.
@@ -88,13 +90,13 @@ export default function Kariyer() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-5 ">
-              <div className=" overflow-hidden group rounded-xl w-80 lg:w-48">
-                <div className="bg-center bg-cover w-80 lg:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
+              <div className=" overflow-hidden group rounded-xl w-60 xl:w-48">
+                <div className="bg-center bg-cover w-60 xl:w-48 h-60 group-hover:scale-110 duration-1000 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.jpg/v1/fill/w_1250,h_1250,q_90/c837a6_d3dc938f64824d11a95b03666d4dd1b8~mv2.webp)]   "></div>
               </div>
-              <div className="flex flex-col gap-3 text-white">
+              <div className="flex flex-col items-start justify-center gap-3 text-white">
                 <div className="font-bold text-xl">Topluluk Yöneticisi</div>
                 <div>İstanbul</div>
-                <div className="w-80 lg:w-48">
+                <div className="w-full">
                   Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
                   Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
                   tanıtmak için harika bir yer.
