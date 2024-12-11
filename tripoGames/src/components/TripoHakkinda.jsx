@@ -24,7 +24,7 @@ export default function TripoHakkinda() {
         ></img>
         <div className="bg-red-700 rounded-xl opacity-0 group-hover:opacity-30 duration-500 w-full h-full absolute left-0 top-0"></div>
         <img
-          className="absolute -left-16 bottom-0 w-60 h-60"
+          className="absolute  bottom-0 w-24 h-24 md:w-60 md:h-60"
           src="https://static.wixstatic.com/media/c837a6_0253876c52cc473e888d7842bc048c43~mv2.png/v1/fill/w_342,h_369,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1768049210.png"
         ></img>
       </div>
