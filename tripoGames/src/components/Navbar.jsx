@@ -98,7 +98,7 @@ export default function Navbar() {
         </div>
       </div>
       {/*Mobile menu*/}
-      <div className=" flex md:hidden items-center justify-between px-10 w-full z-50 overflow-hidden">
+      <div className=" flex md:hidden items-center justify-between px-3 w-full z-50 overflow-hidden">
         {" "}
         <div className="bg-[#da392b] p-5 rounded-b shadow-xl z-30 text-white font-bold text-xl">
           <Link to="/">Tripo Games</Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
             <div className="fixed left-0 top-0 h-screen w-full flex flex-col items-center justify-center gap-1 bg-white shadow-xl rounded-b z-20 ">
               <div>
                 <IoCloseSharp
-                  className="size-11 fixed right-8 top-5"
+                  className="size-11 fixed right-2 top-3"
                   onClick={handleMobileMenuControl}
                 />
               </div>
