@@ -12,7 +12,7 @@ export default function Oyunlarimiz() {
       <div className="h-[600px] md:h-[1400px] left-0 top-48 md:top-10 w-full absolute bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png/v1/fill/w_1265,h_1185,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png)]"></div>
       <div className=" w-full flex flex-col items-center justify-center gap-5 z-30">
         <div className="text-4xl font-bold">Oyunlarımız</div>
-        <div className="text-center  text-xl w-2/5">
+        <div className="text-center  text-xl w-11/12 md:w-2/5 ">
           Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası, bir
           hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için harika
           bir yer.

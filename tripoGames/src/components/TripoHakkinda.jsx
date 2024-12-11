@@ -5,7 +5,7 @@ export default function TripoHakkinda() {
       <div className="w-3/4 md:w-1/2 text-5xl font-bold">
         Bir Numaralı Mobil Eğlence Kaynağınız
       </div>
-      <div className="w-11/12 md:w-1/2 text-xl  border border-black">
+      <div className="w-11/12 md:w-1/2 text-xl  ">
         Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. İçeriğinizi
         eklemek ve yazı tipini değiştirmek için “Metni Düzenle” düğmesine
         tıklayın veya buraya çift tıklayın. Burası, bir hikâye anlatmak ve
