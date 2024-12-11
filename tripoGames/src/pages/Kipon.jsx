@@ -5,9 +5,9 @@ import { Parallax } from "react-scroll-parallax";
 export default function Kipon() {
   const divRef1 = useRef(null);
 
-  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.5 });
+  const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
   return (
-    <div className="flex flex-col w-full py-10 overflow-hidden">
+    <div ref={divRef1} className="flex flex-col w-full py-10 overflow-hidden">
       <div className="relative py-10 w-full ">
         {" "}
         <Parallax speed={-20}>

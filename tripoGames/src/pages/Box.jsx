@@ -7,7 +7,7 @@ export default function Box() {
 
   const hasIntersected1 = useIntersectionObserver(divRef1, { threshold: 0.1 });
   return (
-    <div className="flex flex-col w-full py-10">
+    <div ref={divRef1} className="flex flex-col w-full py-10">
       <div className="relative py-10 ">
         <Parallax speed={-20}>
           {" "}
