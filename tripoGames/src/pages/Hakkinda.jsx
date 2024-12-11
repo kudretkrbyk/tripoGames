@@ -48,7 +48,7 @@ export default function Hakkinda() {
             </div>
             <div className="p-1  md:p-10   ">
               Burası, bir hikâye anlatmak ve kullanıcılarınıza kendinizi
-              tanıtmak için harika bir yer. ​Burası, şirketiniz ve hizmetleriniz
+              tanıtmak için harika bir yer.​Burası, şirketiniz ve hizmetleriniz
               hakkında uzun bir metin yazmak için harika bir yer. Bu alanı,
               şirketiniz ile ilgili daha ayrıntılı bilgi vermek için
               kullanabilirsiniz. Ekibinizden ve sunduğunuz hizmetlerden söz
