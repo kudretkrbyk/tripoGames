@@ -101,7 +101,7 @@ export default function Navbar() {
       <div className=" flex md:hidden items-center justify-between px-10 w-full z-50 overflow-hidden">
         {" "}
         <div className="bg-[#da392b] p-5 rounded-b shadow-xl z-30 text-white font-bold text-xl">
-          Tripo Games
+          <Link to="/">Tripo Games</Link>
         </div>
         <div>
           <GiHamburgerMenu
@@ -109,7 +109,7 @@ export default function Navbar() {
             onClick={handleMobileMenuControl}
           />{" "}
           {mobileMenuControl ? (
-            <div className="fixed left-0 top-0 h-screen w-full flex flex-col items-center justify-center bg-white shadow-xl rounded-b z-20 ">
+            <div className="fixed left-0 top-0 h-screen w-full flex flex-col items-center justify-center gap-1 bg-white shadow-xl rounded-b z-20 ">
               <div>
                 <IoCloseSharp
                   className="size-11 fixed right-8 top-5"
@@ -125,7 +125,7 @@ export default function Navbar() {
               </Link>
               <div
                 onClick={handleMobileMenuSubMenuControl}
-                className="flex items-center justify-center gap-2 hover:bg-[#da392b] duration-500 p-5 hover:text-white relative group"
+                className="flex items-center justify-center gap-2 hover:bg-[#da392b] duration-500 p-5 px-7 hover:text-white relative group"
               >
                 Oyunlar
                 <div>
@@ -158,7 +158,7 @@ export default function Navbar() {
               </div>
               <Link
                 to="/kariyer"
-                className="hover:bg-[#da392b] duration-500 hover:text-white p-5"
+                className="hover:bg-[#da392b] duration-500 hover:text-white p-5 px-7"
                 onClick={handleMobileMenuControl}
               >
                 Kariyer
