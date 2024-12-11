@@ -17,7 +17,7 @@ function App() {
   return (
     <ParallaxProvider>
       <Router>
-        <div className="relative">
+        <div className="">
           <Navbar />
           {/* Suspense ile yedek bir yükleme durumu ekliyoruz */}
           <Suspense fallback={<div>Loading...</div>}>

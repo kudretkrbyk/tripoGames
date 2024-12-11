@@ -27,7 +27,7 @@ export default function EkibimizeKatilin() {
         </div>
       </div>
 
-      <div className="w-full  h-full  border border-red-900 overflow-hidden -mt-[500px] md:-mt-60 ">
+      <div className="w-full  h-full  overflow-hidden -mt-[500px] md:-mt-60 ">
         <Parallax speed={-20}>
           {" "}
           <div className="w-full h-[1000px]  md:h-[800px] bg-center bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg/v1/fill/w_1265,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg)]   "></div>

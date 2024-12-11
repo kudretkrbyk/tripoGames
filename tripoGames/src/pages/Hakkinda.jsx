@@ -14,7 +14,7 @@ export default function Hakkinda() {
   const hasIntersected4 = useIntersectionObserver(divRef4, { threshold: 0.9 });
   const hasIntersected5 = useIntersectionObserver(divRef5, { threshold: 0.9 });
   return (
-    <div className="flex flex-col w-full py-10">
+    <div className="flex flex-col w-full h-full py-10">
       <div
         ref={divRef1}
         className={`transition-transform duration-700 ${
@@ -117,16 +117,16 @@ export default function Hakkinda() {
       <div className="w-full h-full z-30 p-10  ">
         <div
           ref={divRef4}
-          className="bg-[#272443] w-full  lg:h-[600px] flex flex-col items-center"
+          className="bg-[#272443] w-full h-full xl:h-[600px] flex flex-col items-center justify-center"
         >
           {" "}
-          <div className=" text-white text-6xl font-bold w-full   text-center p-5">
+          <div className=" text-white text-4xl md:text-5xl xl:text-6xl font-bold w-full   text-center p-5 border border-red-500">
             Kurucularımız
           </div>
           <div
             className={` transition-transform duration-1000 ${
               hasIntersected4 ? "translate-y-0" : "translate-y-36"
-            }  flex flex-col lg:flex-row items-center justify-center gap-10 w-full p-10`}
+            }  flex flex-col lg:flex-row items-center justify-center gap-10 w-full p-10 h-full border border-yellow-500`}
           >
             <div className="flex flex-col items-center justify-center gap-3 w-full text-white">
               {" "}
@@ -163,8 +163,8 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full p-10 lg:-mt-48 ">
-        <div className=" relative flex items-center justify-between w-full h-[800px] ">
+      <div className="w-full p-10 -mt-[250px] xl:-mt-60 h-full">
+        <div className=" relative flex items-center justify-between w-full h-[800px] border border-black">
           <div className="w-full absolute h-[1000px] ">
             {" "}
             <Parallax speed={-15}>
@@ -177,15 +177,15 @@ export default function Hakkinda() {
             </Parallax>
           </div>
 
-          <div className="flex flex-col gap-10 -mb-24 lg:flex-row  items-center justify-between p-10 lg:p-36 ">
+          <div className="flex flex-col gap-20 md:gap-16 xl:gap-10 -mb-[250px] md:-mb-28 lg:flex-row  items-center justify-between p-10 lg:p-36 ">
             {" "}
             <div
               className={` transition-transform duration-1000 ${
                 hasIntersected5 ? "translate-x-0" : "-translate-x-24"
-              } text-white z-20 lg:p-10 w-full lg:w-1/2 `}
+              } text-white z-20 xl:p-10 w-full lg:w-1/2 `}
             >
               {" "}
-              <div>Ofislerimiz</div>
+              <div className="text-xl font-bold">Ofislerimiz</div>
               <div>İstanbul Stüdyomuz</div>
               <div>
                 Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
