@@ -13,12 +13,12 @@ export default function Kariyer() {
         ref={divRef1}
         className={`transition-transform duration-700 ${
           hasIntersected1 ? "translate-x-0" : "-translate-x-20"
-        } w-full lg:w-1/2 p-10 flex flex-col gap-4 text-black`}
+        } w-full lg:w-1/2 p-3 md:p-10 flex flex-col gap-4 text-black border border-black`}
       >
         <div className="text-xl font-bold text-black">
           Gelin, Oyun Dünyasında Devrim Yaratalım
         </div>
-        <div className="text-5xl font-bold text-nowrap">Ekibimize Katılın</div>
+        <div className="text-5xl font-bold  w-full">Ekibimize Katılın</div>
         <div className="text-xl">
           Bu, bir paragraf. Kendi metninizi eklemek, özgün içerik girmek ve yazı
           tipinde değişiklik yapmak için “Metni Düzenle“ye tıklamanız ya da
