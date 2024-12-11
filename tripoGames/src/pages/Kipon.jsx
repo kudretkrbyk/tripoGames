@@ -21,15 +21,15 @@ export default function Kipon() {
           ref={divRef1}
           className={`absolute top-0 right-10 md:right-1/2 transition-transform duration-700 ${
             hasIntersected1 ? "translate-x-0" : "-translate-x-full"
-          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-10`}
+          } w-2/3 md:w-1/3 bg-white shadow-xl flex flex-col gap-10 rounded-xl p-3 md:p-10`}
         >
-          <div className="flex items-center justify-start gap-2">
+          <div className="flex items-center justify-start gap-2 ">
             {" "}
-            <div className="bg-cover bg-center w-20 h-20 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_16a98f508d924e89876cfa965dd448ff~mv2.jpg/v1/crop/x_1815,y_679,w_1361,h_1363/fill/w_119,h_119,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/shutterstock_1811519149.jpg)]  "></div>{" "}
+            <div className=" bg-cover bg-center w-20 h-20 rounded-xl bg-[url(https://static.wixstatic.com/media/c837a6_16a98f508d924e89876cfa965dd448ff~mv2.jpg/v1/crop/x_1815,y_679,w_1361,h_1363/fill/w_119,h_119,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/shutterstock_1811519149.jpg)]  "></div>{" "}
             <div>
               {" "}
               <div>Kipon</div>
-              <div>Gündelik-Ücretsiz</div>
+              <div className="text-nowrap">Gündelik-Ücretsiz</div>
             </div>
           </div>
           <div className="md:text-5xl font-bold">
@@ -39,17 +39,6 @@ export default function Kipon() {
             Bu, bir paragraf. Kendi metninizi eklemek için tıklayın. Burası, bir
             hikâye anlatmak ve kullanıcılarınıza kendinizi tanıtmak için harika
             bir yer.
-          </div>
-          <div className="flex w-full items-center justify-center gap-5">
-            {" "}
-            <img
-              className="w-32 h-10"
-              src="https://static.wixstatic.com/media/c837a6_e5a608d569fd4c56bcfedec4a72bfbd9~mv2.png/v1/fill/w_180,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Apple%20Store.png"
-            ></img>
-            <img
-              className="w-32 h-10"
-              src="https://static.wixstatic.com/media/c837a6_382fdb7f2d0548b4abd0c3f53011a351~mv2.png/v1/fill/w_206,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Google%20Play.png"
-            ></img>
           </div>
         </div>
       </div>
