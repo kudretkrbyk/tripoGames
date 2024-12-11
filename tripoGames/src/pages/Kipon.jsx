@@ -104,7 +104,7 @@ export default function Kipon() {
       <div className="w-full h-screen relative flex items-center justify-center">
         <div className=" bg-center bg-cover w-full h-screen bg-[url(https://static.wixstatic.com/media/c837a6_cff34240addf4fa4991328bd1d51dde0~mv2.jpg/v1/fill/w_1521,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cff34240addf4fa4991328bd1d51dde0~mv2.jpg)]   "></div>
         <div className="bg-red-500 w-full h-screen absolute opacity-55"></div>
-        <div className="absolute  flex flex-col items-center justify-center w-full lg:w-1/2 gap-7  p-10 text-white">
+        <div className="absolute  flex flex-col items-center justify-center w-full xl:w-1/2 gap-7  p-10 text-white">
           {" "}
           <div className="text-5xl text-center">
             İster Arkadaşınıza İster Saate Karşı Yarışın, 20 Seviyede Sınırsız

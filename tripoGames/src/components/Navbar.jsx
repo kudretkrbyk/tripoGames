@@ -158,18 +158,21 @@ export default function Navbar() {
               <Link
                 to="/kariyer"
                 className="hover:bg-[#da392b] duration-500 hover:text-white p-5"
+                onClick={handleMobileMenuControl}
               >
                 Kariyer
               </Link>
               <Link
                 to="/hakkinda"
                 className="hover:bg-[#da392b] hover:text-white duration-500 p-5"
+                onClick={handleMobileMenuControl}
               >
                 Hakkında
               </Link>
               <Link
                 to="/iletisim"
                 className="hover:bg-[#da392b] duration-500 hover:text-white rounded-br p-5"
+                onClick={handleMobileMenuControl}
               >
                 İletişim
               </Link>

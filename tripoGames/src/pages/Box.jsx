@@ -44,7 +44,7 @@ export default function Box() {
       </div>
       <div className="flex flex-col w-full p-10 gap-5">
         <div className="font-bold">Ekran Görüntüleri</div>
-        <div className="flex items-center justify-center gap-10 ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 ">
           <div className="w-full  group overflow-hidden rounded-3xl ">
             <div className="w-full h-96 rounded-3xl group-hover:scale-110 duration-1000 bg-center  bg-cover bg-[url(https://static.wixstatic.com/media/c837a6_c4f1caa7ad3c4fe4ad63bdb4a138f37f~mv2.jpg/v1/fill/w_1919,h_1080,q_90/c837a6_c4f1caa7ad3c4fe4ad63bdb4a138f37f~mv2.jpg)]   "></div>
           </div>
@@ -93,7 +93,7 @@ export default function Box() {
       <div className="w-full h-screen relative flex items-center justify-center">
         <div className=" bg-center bg-cover w-full h-screen bg-[url(https://static.wixstatic.com/media/c837a6_cff34240addf4fa4991328bd1d51dde0~mv2.jpg/v1/fill/w_1521,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cff34240addf4fa4991328bd1d51dde0~mv2.jpg)]   "></div>
         <div className="bg-red-500 w-full h-screen absolute opacity-55"></div>
-        <div className="absolute  flex flex-col items-center justify-center  w-1/2 gap-7  p-10 text-white">
+        <div className="absolute  flex flex-col items-center justify-center  xl:w-1/2 gap-7  p-10 text-white">
           {" "}
           <div>Dünyadaki Diğer Oyunculara Karşı Oynayın</div>
           <div className="text-5xl text-center">
