@@ -177,12 +177,12 @@ export default function Hakkinda() {
             </Parallax>
           </div>
 
-          <div className="w-full flex flex-col gap-20 md:gap-16 xl:gap-10 -mb-[250px] md:-mb-28 lg:flex-row  items-center justify-between p-3 lg:p-36 ">
+          <div className="w-full flex flex-col gap-20 md:gap-16 xl:gap-10 -mb-[290px] md:-mb-28 lg:flex-row  items-center justify-between p-3 lg:p-36 ">
             {" "}
             <div
               className={` transition-transform duration-1000 ${
                 hasIntersected5 ? "translate-x-0" : "-translate-x-0"
-              } text-white z-20 xl:p-10 w-full lg:w-1/2 `}
+              } text-white z-20 p-3 xl:p-10 w-full lg:w-1/2 `}
             >
               {" "}
               <div className="text-xl font-bold">Ofislerimiz</div>
