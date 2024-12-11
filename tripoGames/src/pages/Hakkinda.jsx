@@ -163,7 +163,7 @@ export default function Hakkinda() {
           </div>
         </div>{" "}
       </div>
-      <div className="w-full p-10 -mt-[250px] xl:-mt-60 h-full">
+      <div className="w-full p-3 md:p-10 -mt-[250px] xl:-mt-60 h-full">
         <div className=" relative flex items-center justify-between w-full h-[800px] border border-black">
           <div className="w-full absolute h-[1000px] ">
             {" "}
